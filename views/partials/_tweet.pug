@@ -1,0 +1,13 @@
+.app--tweet
+    form(action='/', method='POST')
+        .circle--fluid
+            .circle--fluid--cell.circle--fluid--primary.align-bottom.app--tweet--post
+                .app--avatar(style='background-image: url(' + profile_image + ')')
+                    img(src=profile_image)
+
+                textarea.circle--textarea--input(placeholder="What's happening?", name="tweettextarea", id="tweettextarea")
+
+                strong#tweet-char.app--tweet--char 140
+
+            .circle--fluid--cell.align-bottom
+                button.button-submit Tweet
